@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drum Machine</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="drum-machine">
+            <div id="display">
+                <button class="keys" id="clap" data-key="81">Q</button>
+                <button class="keys" id="hihat" data-key="87">W</button>
+                <button class="keys" id="kick" data-key="69">E</button>
+                <button class="keys" id="openhat" data-key="65">A</button>
+                <button class="keys" id="boom" data-key="83">S</button>
+                <button class="keys" id="ride" data-key="68">D</button>
+                <button class="keys" id="snare" data-key="90">Z</button>
+                <button class="keys" id="tom" data-key="88">X</button>
+                <button class="keys" id="tink" data-key="67">C</button>
+            </div>
+            <div class="controls">
+                <div class="power">
+                    <label for="on">On</label>
+                    <input type="radio" id="on" name="turn" value="On" checked>
+                    <label for="off">Off</label>
+                    <input type="radio" id="off" name="turn" value="Off">
+                </div>
+                <div class="output-pannel">
+                    <div class="pannel">Power: On</div>
+                </div>
+                <div class="volume-controler">
+                    <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
+                </div>
+            </div> 
+        </div>
+
+        <audio data-key = "81" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/clap.wav"></audio>
+        <audio data-key = "87" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/hihat.wav"></audio>
+        <audio data-key	= "69" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/kick.wav"></audio>
+        <audio data-key = "65" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/openhat.wav"></audio>
+        <audio data-key = "83" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/boom.wav"></audio>
+        <audio data-key = "68" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/ride.wav"></audio>
+        <audio data-key = "90" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/snare.wav"></audio>
+        <audio data-key = "88" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/tom.wav"></audio>
+        <audio data-key = "67" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/tink.wav"></audio>
+
+    </body>
+    <script src="script.js"></script>
+</html>

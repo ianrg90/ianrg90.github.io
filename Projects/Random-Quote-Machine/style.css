@@ -1,0 +1,73 @@
+html{
+    background: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") fixed;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+}
+
+#quote-box{
+    width: 18rem;
+}
+
+
+#author{
+    text-align: right;
+}
+
+.buttons{
+    display: flex;
+    justify-content:space-around;
+}
+
+.fa-twitter{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#new-quote{
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.mouseover:hover{
+    transform: scale(0.9);
+    transition: .2s;
+    cursor: pointer;
+}
+.mouseover:hover:active{
+    transform: translatey(5px);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

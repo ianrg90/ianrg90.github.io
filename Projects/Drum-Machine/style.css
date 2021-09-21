@@ -1,0 +1,103 @@
+html{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+    background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,.5));
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drum-machine{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    border: solid gold 5px;
+    background-color: rgb(214, 210, 210);
+}
+
+@media (max-width : 800px){
+    #drum-machine{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+    }
+
+    #display {
+        display: grid;
+        width: 100%;
+    }
+}
+
+@media(max-height: 450px){
+   #drum-machine{
+       height: 90%;
+       width: 50%;
+   }
+}
+
+#display{
+    flex: 1;
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 7%;
+}
+.keys{
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: grey;
+    background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,.5));
+    transition: .01s;
+}
+
+.active{
+    transform: scale(1.1);
+    background-color: rgb(211, 211, 35);
+    
+}
+
+.controls{
+    flex: 1; 
+    display: flex;
+    height: 100%;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+.pannel{
+    background-color: grey;
+    background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,.5));
+    height: auto;
+    width: 6rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
