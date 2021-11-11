@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: rgb(208,255,239);
+}
+
+.main-game{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #ffffff;
+    background-color:  #ffffff;
+    border-radius: 100%;
+    grid-gap: 3px;
+    grid-template-areas: 
+        "first second"
+        "third fourth"
+    ;
+}
+
+@media (max-width: 640px){
+    .genius{
+        height: 300px ;
+        width: 300px;
+    }
+
+}
+
+.green{
+    grid-area: fourth;
+    background-color: green;
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: third;
+    background-color: red;
+    border-bottom-left-radius: 100%;
+}
+
+.yellow{
+    
+    grid-area: second;
+    background-color: yellow;
+    border-top-right-radius: 100%;
+}
+
+.blue{
+    grid-area: first;
+    background-color: blue;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.5;
+}
+
+.game-console{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    background-color: lightgray;
+    border-radius: 100%;
+    position: absolute;
+    align-items:center;
+    justify-content: center;   
+    border: gray solid 3px;
+}
+
+.display{
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: black;
+    width: 6rem;
+    height: 2rem;
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.output{
+    margin-top: 2px;
+    font-size: 1.5rem;
+}
+
+.actions{
+    margin-top: 15px;
+}
+
+.actions button{
+    border-radius: 20%;
+    border: none;
+    width: 50px;
+    background-color: rgb(44, 190, 190);
+    padding: 5px;
+    transition: all 0.1s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(1.0);
+    opacity: 0.6;
+}
