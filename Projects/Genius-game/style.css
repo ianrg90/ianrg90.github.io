@@ -34,26 +34,26 @@ body{
 
 }
 
-.green{
+#green{
     grid-area: fourth;
     background-color: green;
     border-bottom-right-radius: 100%;
 }
 
-.red{
+#red{
     grid-area: third;
     background-color: red;
     border-bottom-left-radius: 100%;
 }
 
-.yellow{
+#yellow{
     
     grid-area: second;
     background-color: yellow;
     border-top-right-radius: 100%;
 }
 
-.blue{
+#blue{
     grid-area: first;
     background-color: blue;
     border-top-left-radius: 100%;
