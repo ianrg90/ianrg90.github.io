@@ -1,0 +1,31 @@
+@media  (max-width: 700px) {
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: max-content;
+  }
+
+  .link {
+    margin-top: 5px;
+    width: max-content ;    
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-height: 400px) {
+    .main-movie{
+        height: max-content
+    }
+    .navigation{
+        padding-bottom: 15px;
+    }
+}
+
+@media  (min-width:1000px) {
+    .description{
+        width: 50%;
+    }
+}
