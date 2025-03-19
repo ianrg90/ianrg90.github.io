@@ -287,7 +287,7 @@ body{
     }
 }
 
-.test-frame {
+#test-frame {
     width: 100vw
     height: 1000px
 
