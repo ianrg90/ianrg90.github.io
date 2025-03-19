@@ -286,3 +286,12 @@ body{
         overflow-x: hidden;
     }
 }
+
+.test-frame {
+    width: 100vw
+    height: 1000px
+
+    iframe {
+        padding: 5rem;
+    }
+}
