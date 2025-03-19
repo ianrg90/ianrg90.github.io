@@ -288,8 +288,8 @@ body{
 }
 
 #test-frame {
-    width: 100vw
-    height: 1000px
+    width: 100vw;
+    height: 1000px;
 
     iframe {
         padding: 5rem;
